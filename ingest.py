@@ -44,7 +44,7 @@ if __name__ == "__main__":
     if digest_urls:
         try:
             merged_content = download_and_merge(digest_urls)
-            with open("merged_documentation.md", "w") as f:
+            with open("merged_documentation.txt", "w") as f:
                 f.write(merged_content)
             print("Successfully downloaded and merged documentation into merged_documentation.md")
         except requests.exceptions.RequestException as e:
